@@ -1,0 +1,89 @@
+-- vim.cmd([[highlight Normal guibg=none]])
+-- vim.cmd([[highlight NonText guibg=none]])
+-- vim.cmd([[colorscheme unokai]])
+
+return {
+	-- {
+	-- 	"neanias/everforest-nvim",
+	-- 	version = false,
+	-- 	lazy = false,
+	-- 	priority = 1000, -- make sure to load this before all the other start plugins
+	-- 	-- Optional; default configuration will be used if setup isn't called.
+	-- 	config = function()
+	-- 		require("everforest").setup({
+	-- 			-- Your config here
+	-- 			background = "medium",
+	-- 			transparent_background_level = 2,
+	-- 			italics = true,
+	-- 		})
+	-- 		local everforest = require("everforest")
+	-- 		everforest.load()
+	--
+	-- 		-- fix the transparency issues
+	-- 		vim.cmd([[highlight NormalFloat guibg=none guifg=none]])
+	-- 		vim.cmd([[highlight Float guibg=none guifg=none]])
+	-- 		vim.cmd([[highlight FloatBorder guibg=none guifg=none]])
+	-- 	end,
+	-- },
+	-- gruvbox
+	-- {
+	-- 	"morhetz/gruvbox",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		vim.g.gruvbox_contrast_dark = "hard"
+	-- 		vim.cmd([[colorscheme gruvbox]])
+	-- 	end,
+	-- },
+	-- {
+	-- 	"fneu/breezy",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		vim.cmd([[colorscheme breezy]])
+	-- 		vim.g.background = "dark"
+	-- 		vim.opt.termguicolors = true
+	-- 	end,
+	-- },
+	-- {
+	-- 	"wincent/base16-nvim",
+	-- 	lazy = false, -- load at start
+	-- 	priority = 1000, -- load first
+	-- 	config = function()
+	-- 		vim.cmd([[colorscheme gruvbox-dark-hard]])
+	-- 		vim.o.background = "dark"
+	-- 		vim.cmd([[hi Normal ctermbg=NONE]])
+	-- 		-- Less visible window separator
+	-- 		vim.api.nvim_set_hl(0, "WinSeparator", { fg = 1250067 })
+	-- 		-- Make comments more prominent -- they are important.
+	-- 		local bools = vim.api.nvim_get_hl(0, { name = "Boolean" })
+	-- 		vim.api.nvim_set_hl(0, "Comment", bools)
+	-- 		-- Make it clearly visible which argument we're at.
+	-- 		local marked = vim.api.nvim_get_hl(0, { name = "PMenu" })
+	-- 		vim.api.nvim_set_hl(
+	-- 			0,
+	-- 			"LspSignatureActiveParameter",
+	-- 			{ fg = marked.fg, bg = marked.bg, ctermfg = marked.ctermfg, ctermbg = marked.ctermbg, bold = true }
+	-- 		)
+	-- 	end,
+	-- },
+	-- {
+	-- 	-- Color palette:  https://user-images.githubusercontent.com/58662350/213884019-cbcd5f00-5bef-4a37-9139-0570770330b6.png
+	-- 	"sainnhe/gruvbox-material",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		vim.g.gruvbox_material_foreground = "material"
+	-- 		vim.g.gruvbox_material_background = "hard"
+	-- 		vim.g.gruvbox_material_enable_italic = true
+	-- 		vim.g.gruvbox_material_transparent_background = 0
+	--
+	-- 		vim.api.nvim_set_hl(0, "CmpGhostText", { link = "Comment" })
+	--
+	-- 		vim.cmd([[colorscheme gruvbox-material]])
+	-- 		-- vim.api.nvim_set_hl(0, "FloatBorder", { link = "Normal" })
+	-- 		-- vim.api.nvim_set_hl(0, "NormalFloat", { link = "Normal" })
+	-- 		-- vim.api.nvim_set_hl(0, "FloatTitle", { link = "Normal" })
+	-- 	end,
+	-- },
+}

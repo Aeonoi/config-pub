@@ -1,0 +1,20 @@
+require("FloverConfig.lazy")
+require("FloverConfig.keymaps")
+require("FloverConfig.options")
+-- require("FloverConfig.statusline")
+require("utils.highlight_yank")
+require("utils.jump_to_last_opened")
+require("utils.spell_checking")
+require("utils.resize_split")
+require("utils.remove_lines_terminal")
+require("utils.rotate_windows")
+require("utils.close_with_q")
+require("utils.create_path")
+require("utils.disable_colorcolumn")
+require("utils.quickfix-on-save")
+-- require("FloverConfig.highlight")
+-- require("utils.autosave")
+-- require("utils.hover_diagnostic")
+
+-- Hide those depecrated messages
+vim.deprecate = function() end
